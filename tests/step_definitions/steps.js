@@ -21,6 +21,6 @@ When(/^I look for a specific t-shirt in the proper section$/, () => {
 Then(/^I must be able to see the proper results$/, () => {
 return client
     .pause(1000)
-    .assert.containsText('h1[class="page-heading  product-listing"]', 'hola')
+    .assert.containsText('h1[class="page-heading  product-listing"]', 'SEARCH')
     .end();
 });
